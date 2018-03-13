@@ -1,0 +1,22 @@
+{
+  "name": "minovate",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "artklim <artklim777@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "normalize-css": "^8.0.0",
+    "bxslider-4": "^4.2.12"
+  }
+}
