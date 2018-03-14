@@ -1,17 +1,44 @@
-.form-group {
-  margin-bottom: 1rem; }
-
-.form-control {
-  margin: 0;
-  border-radius: 0;
-  font: inherit;
-  display: block;
-  width: 100%;
-  height: 40px;
-  padding: 5px 10px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  color: #000; }
+.form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  height: 100%; }
+  .form-title {
+    color: #5363db;
+    font-family: "Open Sans";
+    font-size: 26px;
+    font-weight: 400; }
+  .form-holder {
+    margin-right: 45px;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 60%;
+    padding: 40px 40px 35px 30px; }
+  .form-group {
+    margin-bottom: 1rem; }
+    .form-group:last-child {
+      padding-top: 21px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+  .form-control {
+    margin: 0;
+    border-radius: 0;
+    font: inherit;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    border: 1px solid transparent;
+    color: #888888;
+    border-radius: 8px; }
 
 textarea.form-control {
   height: auto;

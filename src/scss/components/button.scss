@@ -1,9 +1,11 @@
-$button-color:       #000;
-$button-background:  #fff;
-$button-border:      1px solid #ccc;
-$button-padding:     5px 10px;
+$button-color:       #fff;
+$button-background:  #5b6ceb;
+$button-border:      1px solid transparent;
+$button-padding:     17px 50px;
 $button-font-size:   14px;
 $button-font-weight: normal;
+$button-radius:      20px;
+
 
 
 .button {
@@ -22,6 +24,8 @@ $button-font-weight: normal;
 	font-size: $button-font-size;
 	font-weight: $button-font-weight;
 	background: $button-background;
+	border-radius: $button-radius;
+
 
 	&:hover {
 		text-decoration: none;

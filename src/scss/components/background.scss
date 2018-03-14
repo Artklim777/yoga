@@ -1,3 +1,8 @@
-.background-blue {
-  background-color: #5363db;
+.background {
+    &-blue {
+        background-color: #5363db;
+    }
+    &-white {
+        background-color: #fff;
+    }
 }

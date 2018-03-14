@@ -1,54 +1,64 @@
-$form-color:          #000;
-$form-background:     #fff;
-$form-border:         1px solid #ccc;
-$form-height:         40px;
-$form-size:           1rem;
-$form-group-margin:   1rem;
-$form-padding:        5px 10px;
+$form-color: #888888;
+$form-background: #f2f2f2;
+$form-border: 1px solid transparent;
+$form-height: 40px;
+$form-size: 1rem;
+$form-group-margin: 1rem;
+$form-padding: 5px 10px;
 
 .form {
-	&-group {
-		margin-bottom: $form-group-margin;
-		
-	}
-	&-control {
-		margin: 0;
-    	border-radius: 0;
-    	font: inherit;
-		display: block;
-		width: 100%;
-		height: $form-height;
-		padding: $form-padding;
-		background-color: $form-background;
-		border: $form-border;
-		color: $form-color;
-		
-		&:focus {
-			
-		}
-		&::placeholder {
-		
-		}
-	}
-	&-select {
-		
-	}
-	&-radio {
-		;
-	}
-	&-checkbox {
-		
-	}
-	&-file {
-	
-	}
-	
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+
+    &-title {
+        color: #5363db;
+        font-family: "Open Sans";
+        font-size: 26px;
+        font-weight: 400;
+    }
+    &-holder {
+        margin-right: 45px;
+        background-color: #fff;
+        border-radius: 20px;
+        width: 60%;
+        padding: 40px 40px 35px 30px;
+        
+    }
+    &-group {
+        margin-bottom: $form-group-margin;
+        &:last-child {
+            padding-top: 21px;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &-control {
+        margin: 0;
+        border-radius: 0;
+        font: inherit;
+        display: block;
+        width: 100%;
+        height: $form-height;
+        padding: $form-padding;
+        background-color: $form-background;
+        border: $form-border;
+        color: $form-color;
+        border-radius: 8px;
+
+
+        &:focus {}
+        &::placeholder {}
+    }
+    &-select {}
+    &-radio {}
+    &-checkbox {}
+    &-file {}
 }
 
 textarea.form-control {
-	height: auto;
-	resize: vertical;
+    height: auto;
+    resize: vertical;
 }
-
-
-

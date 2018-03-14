@@ -10,11 +10,12 @@
   -ms-user-select: none;
   user-select: none;
   display: inline-block;
-  padding: 5px 10px;
-  color: #000;
-  border: 1px solid #ccc;
+  padding: 17px 50px;
+  color: #fff;
+  border: 1px solid transparent;
   font-size: 14px;
   font-weight: normal;
-  background: #fff; }
+  background: #5b6ceb;
+  border-radius: 20px; }
   .button:hover {
     text-decoration: none; }

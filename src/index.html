@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Yoga</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../bower_components/normalize-css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="../bower_components/bxslider-4/dist/jquery.bxslider.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -13,7 +14,6 @@
 <body>
     <div class="wrapper">
         {{> header/header}}
-        
         <section class="our-classes">
             <div class="container">
                 <div class="our-classes-heading">
@@ -82,21 +82,29 @@
                     <div class="works-ferst">
                         <div class="works-item">
                             <a href="#" class="works-item-link"><img src="images/layer-14.png" alt="#"></a>
-                            <div class="works-hover"></div>
+                            <div class="works-hover">
+                                <a href="" class="zoom"><span class="icon-search"></span></a>
+                            </div>
                         </div>
                         <div class="works-item">
                             <a href="#" class="works-item-link"><img src="images/ocd9h80.png" alt="#"></a>
-                            <div class="works-hover"></div>
+                            <div class="works-hover">
+                                <a href="" class="zoom"><span class="icon-search"></span></a>
+                            </div>
                         </div>
                     </div>
                     <div class="works-ferst">
                         <div class="works-item">
                             <a href="#" class="works-item-link"><img src="images/layer-7.png" alt="#"></a>
-                            <div class="works-hover"></div>
+                            <div class="works-hover">
+                                <a href="" class="zoom"><span class="icon-search"></span></a>
+                            </div>
                         </div>
                         <div class="works-item">
                             <a href="#" class="works-item-link"><img src="images/layer-8.png" alt="#"></a>
-                            <div class="works-hover"></div>
+                            <div class="works-hover">
+                                <a href="" class="zoom"><span class="icon-search"></span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -104,21 +112,29 @@
                     <div class="works-second">
                         <div class="works-item">
                             <a href="#" class="works-item-link"><img src="images/ocdbw40.png" alt="#"></a>
-                            <div class="works-hover"></div>
+                            <div class="works-hover">
+                                <a href="" class="zoom"><span class="icon-search"></span></a>
+                            </div>
                         </div>
                         <div class="works-item">
                             <a href="#" class="works-item-link"><img src="images/layer-6.png" alt="#"></a>
-                            <div class="works-hover"></div>
+                            <div class="works-hover">
+                                <a href="" class="zoom"><span class="icon-search"></span></a>
+                            </div>
                         </div>
                     </div>
                     <div class="works-second">
                         <div class="works-item">
                             <a href="#" class="works-item-link"><img src="images/ocdbwg0.png" alt="#"></a>
-                            <div class="works-hover"></div>
+                            <div class="works-hover">
+                                <a href="" class="zoom"><span class="icon-search"></span></a>
+                            </div>
                         </div>
                         <div class="works-item">
                             <a href="#" class="works-item-link"><img src="images/layer-15.png" alt="#"></a>
-                            <div class="works-hover"></div>
+                            <div class="works-hover">
+                                <a href="" class="zoom"><span class="icon-search"></span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -221,12 +237,58 @@
                 </div>
             </div>
         </section>
-        
-      {{> footer/footer}}
+        <section class="card">
+            <div class="container">
+                <div class="card-body">
+                    <div class="card-item ">
+                        <div class="card-item-heading">
+                            <div class="card-item-price"><span class="card-item-dollor">$</span>49<span class="card-item-month">/month</span></div>
+                        </div>
+                        <div class="card-item-holder">
+                            <div class="card-item-discription">
+                                <span class="card-item-text line">ENTRY DATE: MON – FRI</span>
+                                <span class="card-item-text line">ENTRY TIME: 8A.M – 8P.M</span>
+                                <span class="card-item-text">NUTRITION ADVICER: NO</span></div>
+                            <button class="button button-small">Buy now</button>
+                        </div>
+                    </div>
+                    <div class="card-item ">
+                        <div class="card-item-heading">
+                            <div class="card-item-price"><span class="card-item-dollor">$</span>69<span class="card-item-month">/month</span></div>
+                        </div>
+                        <div class="card-item-holder">
+                            <div class="card-item-discription">
+                                <span class="card-item-text line">ENTRY DATE: MON – FRI</span>
+                                <span class="card-item-text line">ENTRY TIME: 8A.M – 8P.M</span>
+                                <span class="card-item-text">NUTRITION ADVICER: NO</span></div>
+                            <button class="button button-small">Buy now</button>
+                        </div>
+                    </div>
+                    <div class="card-item ">
+                        <div class="card-item-heading">
+                            <div class="card-item-price"><span class="card-item-dollor">$</span>69<span class="card-item-month">/month</span></div>
+                        </div>
+                        <div class="card-item-holder">
+                            <div class="card-item-discription">
+                                <span class="card-item-text line">ENTRY DATE: MON – FRI</span>
+                                <span class="card-item-text line">ENTRY TIME: 8A.M – 8P.M</span>
+                                <span class="card-item-text">NUTRITION ADVICER: NO</span></div>
+                            <button class="button button-small">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{> footer/footer}}
     </div>
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../bower_components/bxslider-4/dist/jquery.bxSlider.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script type='text/javascript' src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type='text/javascript' src="../bower_components/bxslider-4/dist/jquery.bxSlider.min.js"></script>
+     <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+  </script>
+    <script type='text/javascript' src="js/main.js"></script>
 </body>
 
 </html>
