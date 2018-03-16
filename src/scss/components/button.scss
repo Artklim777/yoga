@@ -1,44 +1,46 @@
-$button-color:       #fff;
-$button-background:  #5b6ceb;
-$button-border:      1px solid transparent;
-$button-padding:     17px 50px;
-$button-font-size:   14px;
+$button-color : #fff;
+$button-background : #5b6ceb;
+$button-border : 1px solid transparent;
+$button-padding : 17px 50px;
+$button-font-size : 14px;
 $button-font-weight: normal;
-$button-radius:      20px;
+$button-radius : 20px;
 
 
 
 .button {
-	margin: 0;
-	font: inherit;
+    margin: 0;
+    font: inherit;
     cursor: pointer;
     text-align: center;
     text-transform: none;
-	text-decoration: none;
-	user-select: none;
+    text-decoration: none;
+    user-select: none;
 
-	display: inline-block;
-	padding: $button-padding;
-	color: $button-color;
-	border: $button-border;
-	font-size: $button-font-size;
-	font-weight: $button-font-weight;
-	background: $button-background;
-	border-radius: $button-radius;
+    display: inline-block;
+    padding: $button-padding;
+    color: $button-color;
+    border: $button-border;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    background: $button-background;
+    border-radius: $button-radius;
+    &-small {}
+    &-card {
+        &:hover {
+            background-color: #0195ac;
+        }
+
+        &:hover~.card-item-heading {
+            background-color: #0195ac;
+        }
+    }
 
 
-	&:hover {
-		text-decoration: none;
-	
-	}
-	&:focus {
-		
-	}
-	&:active,
-	&.is-active {
-	
-	}
+    &:hover {
+        text-decoration: none;
+    }
+    &:focus {}
+    &:active,
+    &.is-active {}
 }
-
-
-

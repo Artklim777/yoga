@@ -1,0 +1,231 @@
+@import "variables.scss";
+
+
+.slider {
+    &-holder {
+        margin-top: 50px;
+        text-align: center;
+        @media screen and(max-width: 768px) {
+            margin-top: 25px;
+        }
+    }
+    &-title {
+        text-align: center;
+        font-family:$global-font-family;
+        font-size: 32px;
+        font-weight: bold;
+        color: #fff;
+        padding-bottom: 54px;
+
+        @media screen and(max-width: 768px) {
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+    }
+    &-discription {
+        text-align: center;
+        font-family: $global-font-family;
+        font-size: 14px;
+        line-height: 24px;
+        color: #fff;
+        padding-bottom: 50px;
+        @media screen and(max-width: 768px) {
+            padding-bottom: 20px;
+            font-size: 12px;
+        }
+    }
+    &-name1 {
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 22px;
+        text-transform: uppercase;
+    }
+    &-name2 {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 22px;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+/*-------Slider-header------*/
+
+.my-dots {
+    position: absolute;
+    bottom: 40px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.my-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.my-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+    outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+    opacity: 1;
+}
+
+.my-dots li button:before {
+    font-family: 'icomoon';
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: "\e90d";
+    text-align: center;
+    opacity: .25;
+    color: #00e0d0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.my-dots li.slick-active button:before {
+    opacity: .75;
+    color: red;
+}
+
+ 
+/*-------Slider-portfolio----------*/
+
+#slider-portfolio {
+    position: relative;
+    .slick-next {
+        position: absolute;
+        z-index: 20;
+        transform: translate(0, -50%);
+        top: 50%;
+        right: 35px;
+        color: transparent;
+        cursor: pointer;
+        &:before {
+            font-size: 60px;
+            color: #00e0d0;
+            font-family: 'icomoon' !important;
+            line-height: 1;
+            font-weight: normal;
+            content: '\e919';
+            position: absolute;
+            top: 50%;
+            right: 35px;
+            transform: translate(25%, -50%);
+        }
+    }
+
+    .slick-prev {
+        position: absolute;
+        z-index: 20;
+        transform: translate(0, -50%);
+        top: 50%;
+        left: 35px;
+        color: transparent;
+        cursor: pointer;
+        &:before {
+            font-size: 60px;
+            color: #00e0d0;
+            font-family: 'icomoon' !important;
+            line-height: 1;
+            font-weight: normal;
+            content: '\e919';
+            position: absolute;
+            top: 50%;
+            left: 35px;
+            transform: translate(25%, -50%) rotate(180deg);
+        }
+    }
+  
+}
+.slider-quotes{
+    padding-bottom: 20px;
+  span{
+
+  font-size:30px;
+  color:#fff;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ .dots li button {
+  width:50px;
+     height:50px;
+    background: url('../img/bob.jpg');
+    text-indent: -9999px;
+    overflow:hidden;
+
+    /* more CSS 
+}
+/*.slick-dots li button {
+    font-size: 0;}
+    /* more CSS */
+/*
+.dots li button {
+
+    content: url('../img/bob.jpg');
+}
+.slick-dots li a:nth-child(1) {
+     display: block;
+}
+.dots li a:nth-child(2) {
+     display: block;
+     width:50px;
+     height:50px;
+      content: url('../img/bob.jpg');
+}
+.slick-dots li.slick-activeactive a:nth-child(1) {
+  display: block;
+   background: url('../img/bob.jpg');
+}
+.slick-dots li.slick-activeactive a:nth-child(2) {
+    display: block;
+}
+
+    #slick-slide-control12 {}
+}
+*/

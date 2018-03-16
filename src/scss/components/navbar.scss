@@ -1,4 +1,4 @@
-$navbar-breakpoint : 768px;
+$navbar-breakpoint: 768px;
 
 .navbar {
     display: flex;
@@ -11,19 +11,16 @@ $navbar-breakpoint : 768px;
             display: block;
             width: 100%;
         }
-       
     }
     &-nav {
-    	
-    	top:0;
+
+        top: 0;
         list-style: none;
         margin: 0;
         padding-left: 0;
         display: flex;
         padding-bottom: 43px;
         padding-top: 43px;
-        
-
     }
     &-item {
         padding-left: 30px;
@@ -35,15 +32,37 @@ $navbar-breakpoint : 768px;
         color: $third-color;
         font-family: $global-font-family;
         font-size: 17px;
-        font-weight:400;
+        font-weight: 400;
         text-decoration: none;
-        padding-bottom: 3px;
+        padding-bottom: 5px;
+        position: relative;
         &:hover {
             color: #5363db;
-            border-bottom: 1px solid #5363db;
-            width: 30px;
+
+            &::before,
+            & ::after {
+                position: absolute;
+                top: 100%;
+                left: 30%;
+                width: 40%;
+                height: 1px;
+                background: #5363db;
+                content: '';
+                -webkit-transition: -webkit-transform 0.3s;
+                -moz-transition: -moz-transform 0.3s;
+                transition: transform 0.3s;
+                -webkit-transform: scale(0.85);
+                -moz-transform: scale(0.85);
+                transform: scale(0.85);
+            }
         }
+       
     }
+
+
+
+
+
     &-toggler {
 
         @media all and (min-width: $navbar-breakpoint) {
@@ -56,4 +75,14 @@ $navbar-breakpoint : 768px;
             display: none;
         }
     }
+}
+
+.navbar-link {
+    color: $third-color;
+    font-family: $global-font-family;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    padding-bottom: 5px;
+    position: relative;
 }

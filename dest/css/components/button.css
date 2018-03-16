@@ -17,5 +17,9 @@
   font-weight: normal;
   background: #5b6ceb;
   border-radius: 20px; }
+  .button-card:hover {
+    background-color: #0195ac; }
+  .button-card:hover ~ .card-item-heading {
+    background-color: #0195ac; }
   .button:hover {
     text-decoration: none; }
