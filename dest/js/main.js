@@ -1,17 +1,25 @@
+/*-------------------Navbar-toggler---------------*/
+
+    $('.navbar-toggler').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $(target).toggleClass('collapse');
+    });
+
 /*----------Slider-------*/
 
  $(document).ready(function(){
   $('.slider').slick({
-    arrows: false,
-    dots: true,
+    arrows:  true,
+    dots: false,
      dotsClass: "my-dots",
     
   });
 });
  $(document).ready(function(){
-  $('.slider1').slick({
+  $('.slider-trener').slick({
     arrows: true,
-    dots: false,
+     dots: true,
      dotsClass: "my-dots",
     
   });

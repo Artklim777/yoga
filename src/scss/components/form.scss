@@ -7,11 +7,35 @@ $form-group-margin: 1rem;
 $form-padding: 5px 10px;
 
 .form {
+    width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px 40px 35px 30px;
+    padding: 50px;
+    @media screen and( max-width: 768px) {
+        width: 80%;
+       padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media screen and( max-width: 568px) {
+                     width: 100%;
+                }
+    &-body {
+        width: 80%;
+        margin-right: 45px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center ;
+        @media screen and( max-width: 768px) {
+            display: flex;
+        justify-content: center;
+             margin-right: 0;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
 
     &-title {
         color: #5363db;
@@ -21,18 +45,23 @@ $form-padding: 5px 10px;
     }
     &-holder {
         margin-right: 45px;
-        background-color: #fff;
-        border-radius: 20px;
+
         width: 60%;
-        padding: 40px 40px 35px 30px;
-        
+
+        @media screen and( max-width: 768px) {
+            margin: 0 auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
     }
     &-group {
+        width: 100%;
         margin-bottom: $form-group-margin;
         &:last-child {
             padding-top: 21px;
             display: flex;
             justify-content: flex-end;
+            margin: 0;
         }
     }
     &-control {

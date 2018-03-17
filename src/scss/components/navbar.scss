@@ -3,10 +3,15 @@ $navbar-breakpoint: 768px;
 .navbar {
     display: flex;
     justify-content: space-between;
+ 
 
     &-brand {
         display: flex;
         align-items: center;
+                @media screen and( max-width:$navbar-breakpoint ) {
+              padding-top: 20px;
+              padding-bottom: 20px;
+         } 
         img {
             display: block;
             width: 100%;
@@ -56,7 +61,6 @@ $navbar-breakpoint: 768px;
                 transform: scale(0.85);
             }
         }
-       
     }
 
 
@@ -64,18 +68,62 @@ $navbar-breakpoint: 768px;
 
 
     &-toggler {
+        display: block;
+        padding: 7px 5px 5px;
+        border: 1px solid $first-color;
+        border-radius: 2px;
+        width: 42px;
+        height: 32px;
+       position: absolute;
+       right: 0;
+        margin-top: 35px;
+        margin-right: 20px;
+         @media screen and( max-width:$navbar-breakpoint ) {
+              float: right;
+         } 
 
-        @media all and (min-width: $navbar-breakpoint) {
-            display: none;
-        }
+        .ico-bar {
+            display: block;
+            width: 30px;
+            border-top: 2px solid $first-color;
+            height: 3px;
+            margin-bottom: 4px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+             }
+            @media all and (min-width: $navbar-breakpoint) {
+                display: none;
+            }
+       
     }
     &-collapse {
+         &.collapse {
+            display: block;
+            width: 100%;
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            .navbar-nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            @media all and (min-width: $navbar-breakpoint) {
+                display: flex;
+                .navbar-nav {
+                    flex-direction: row;
+                }
+            }
+        }
 
         @media all and (max-width: ($navbar-breakpoint - 1px)) {
             display: none;
         }
     }
 }
+
+
 
 .navbar-link {
     color: $third-color;
