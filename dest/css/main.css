@@ -894,6 +894,9 @@ textarea.form-control {
   right: -25px;
   color: transparent;
   cursor: pointer; }
+  @media screen and (max-width: 992px) {
+    .slider .slick-next {
+      right: 25px; } }
   .slider .slick-next:before {
     font-size: 20px;
     color: #5b6ceb;
@@ -919,6 +922,9 @@ textarea.form-control {
   left: -25px;
   color: transparent;
   cursor: pointer; }
+  @media screen and (max-width: 992px) {
+    .slider .slick-prev {
+      right: 25px; } }
   .slider .slick-prev:before {
     font-size: 20px;
     color: #5b6ceb;
@@ -1362,12 +1368,14 @@ textarea.form-control {
 
 /*--------About Us---------*/
 .about-us {
-  margin-top: 125px;
-  margin-bottom: 125px; }
+  margin-top: 120px;
+  margin-bottom: 120px; }
   @media screen and (max-width: 992px) {
     .about-us {
       margin-top: 0;
-      margin-bottom: 75px; } }
+      margin-bottom: 0; } }
+  .about-us .slider {
+    margin: 0 auto; }
   .about-us-col-right {
     width: 50%; }
     @media screen and (max-width: 992px) {
@@ -1413,6 +1421,10 @@ textarea.form-control {
   .about-us-slider {
     margin-top: 125px;
     margin-bottom: 125px; }
+    @media screen and (max-width: 992px) {
+      .about-us-slider {
+        margin-top: 30px;
+        margin-bottom: 30px; } }
 
 /*----------Feature----------*/
 .feature {
@@ -1570,7 +1582,6 @@ textarea.form-control {
       top: 46px;
       left: 26%; }
 
-/*--------footer--------*/
 .footer {
   background-color: #5b6ceb;
   min-height: 400px; }
@@ -1583,6 +1594,9 @@ textarea.form-control {
     flex-direction: row;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    @media screen and (max-width: 992px) {
+      .footer-top {
+        padding-top: 45px; } }
     @media screen and (max-width: 768px) {
       .footer-top {
         display: -ms-flexbox;
@@ -1591,7 +1605,8 @@ textarea.form-control {
         flex-direction: column;
         -ms-flex-align: center;
         align-items: center;
-        padding-top: 10px; } }
+        padding-top: 10px;
+        padding-bottom: 0px; } }
   .footer-item {
     display: -ms-flexbox;
     display: flex;
@@ -1602,10 +1617,24 @@ textarea.form-control {
     .footer-item:first-child {
       width: 50%;
       margin-right: 140px; }
-    @media screen and (max-width: 768px) {
-      .footer-item {
-        width: 80%;
-        margin-right: 0; } }
+      @media screen and (max-width: 992px) {
+        .footer-item:first-child {
+          margin-right: 50px; } }
+      @media screen and (max-width: 768px) {
+        .footer-item:first-child {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 40px; } }
+    .footer-item-row {
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 40px; }
+      @media screen and (max-width: 442px) {
+        .footer-item-row {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+          flex-direction: column; } }
     .footer-item-title {
       color: #ffffff;
       font-family: "Open Sans", sans-serif;
@@ -1614,21 +1643,38 @@ textarea.form-control {
       line-height: 22px;
       text-transform: uppercase;
       padding-bottom: 61px; }
+      @media screen and (max-width: 992px) {
+        .footer-item-title {
+          padding-bottom: 30px; } }
       @media screen and (max-width: 768px) {
         .footer-item-title {
-          margin-bottom: 10px;
-          margin-top: 10px; } }
+          font-size: 15px;
+          line-height: 12px;
+          text-align: center;
+          margin-bottom: 25px;
+          margin-top: 25px;
+          padding-bottom: 0; } }
     .footer-item .text-transparent {
       color: transparent; }
+      @media screen and (max-width: 440px) {
+        .footer-item .text-transparent {
+          display: none; } }
     .footer-item .text {
       font-family: "Open Sans", sans-serif;
       font-size: 14px;
       line-height: 26px;
       color: #fff;
       margin-bottom: 71px; }
+      @media screen and (max-width: 992px) {
+        .footer-item .text {
+          margin-bottom: 35px;
+          width: 80%; } }
       @media screen and (max-width: 768px) {
         .footer-item .text {
-          margin-top: 0; } }
+          margin-top: 0;
+          width: 70%;
+          margin: 0 auto;
+          margin-bottom: 20px; } }
   .footer .address {
     position: relative;
     color: #fff;
@@ -1651,6 +1697,9 @@ textarea.form-control {
     padding-top: 27px;
     padding-left: 20px;
     color: #fff; }
+    @media screen and (max-width: 440px) {
+      .footer .phone {
+        padding-top: 10px; } }
     .footer .phone:before {
       font-family: 'icomoon';
       content: "\e90e";
@@ -1660,6 +1709,9 @@ textarea.form-control {
       position: absolute;
       top: 29px;
       left: -4px; }
+      @media screen and (max-width: 440px) {
+        .footer .phone:before {
+          top: 10px; } }
   .footer .email {
     position: relative;
     color: #fff;
@@ -1682,6 +1734,9 @@ textarea.form-control {
     padding-top: 27px;
     padding-left: 20px;
     color: #fff; }
+    @media screen and (max-width: 440px) {
+      .footer .planet {
+        padding-top: 10px; } }
     .footer .planet:before {
       font-family: 'icomoon';
       content: "\e904";
@@ -1691,6 +1746,9 @@ textarea.form-control {
       position: absolute;
       top: 29px;
       left: -4px; }
+      @media screen and (max-width: 440px) {
+        .footer .planet:before {
+          top: 10px; } }
   .footer .social {
     display: -ms-flexbox;
     display: flex;
@@ -1743,5 +1801,20 @@ textarea.form-control {
         font-size: 16px;
         font-weight: 400;
         line-height: 22px; }
+        @media screen and (max-width: 992px) {
+          .footer-bottom-holder-copyright {
+            padding-top: 33px;
+            padding-bottom: 41px; } }
+        @media screen and (max-width: 768px) {
+          .footer-bottom-holder-copyright {
+            font-size: 10px;
+            padding-top: 23px;
+            padding-bottom: 21px; } }
       .footer-bottom-holder-logo {
         padding-bottom: 44px; }
+        @media screen and (max-width: 992px) {
+          .footer-bottom-holder-logo {
+            padding-bottom: 30px; } }
+        @media screen and (max-width: 768px) {
+          .footer-bottom-holder-logo {
+            padding-bottom: 20px; } }

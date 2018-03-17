@@ -54,23 +54,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-------Slider-trener-dots-------*/
 
 .my-dots {
@@ -188,6 +171,9 @@
         right: -25px;
         color: transparent;
         cursor: pointer;
+           @media screen and( max-width: 992px) {
+         right: 25px;
+    }
         &:before {
             font-size: 20px;
             color: $first-color;
@@ -215,6 +201,9 @@
         left: -25px;
         color: transparent;
         cursor: pointer;
+           @media screen and( max-width: 992px) {
+         right: 25px;
+    }
         &:before {
             font-size: 20px;
             color: $first-color;
