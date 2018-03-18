@@ -1,46 +1,61 @@
 $navbar-breakpoint: 768px;
-
+#navigation{
+        position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 60;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
- 
-
+    position: relative;
     &-brand {
-        display: flex;
-        align-items: center;
-                @media screen and( max-width:$navbar-breakpoint ) {
-              padding-top: 20px;
-              padding-bottom: 20px;
-         } 
+        position: absolute;
+        top: 20px;
+        left: 47%;
+        @media screen and( max-width: $navbar-breakpoint) {
+            position: static;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 20px;
+        }
         img {
             display: block;
             width: 100%;
         }
     }
     &-nav {
-
-        top: 0;
         list-style: none;
         margin: 0;
         padding-left: 0;
-        display: flex;
         padding-bottom: 43px;
         padding-top: 43px;
+        @media screen and( max-width: $navbar-breakpoint) {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
     }
     &-item {
+        display: inline-block;
         padding-left: 30px;
+
         &:first-child {
             padding-left: 0;
+            @media screen and( max-width: $navbar-breakpoint) {
+                padding-left: 30px;
+                margin-top: 5px;
+            }
         }
     }
     &-link {
+        position: relative;
         color: $third-color;
         font-family: $global-font-family;
         font-size: 17px;
         font-weight: 400;
         text-decoration: none;
         padding-bottom: 5px;
-        position: relative;
+
         &:hover {
             color: #5363db;
 
@@ -63,10 +78,6 @@ $navbar-breakpoint: 768px;
         }
     }
 
-
-
-
-
     &-toggler {
         display: block;
         padding: 7px 5px 5px;
@@ -74,14 +85,12 @@ $navbar-breakpoint: 768px;
         border-radius: 2px;
         width: 42px;
         height: 32px;
-       position: absolute;
-       right: 0;
         margin-top: 35px;
         margin-right: 20px;
-         @media screen and( max-width:$navbar-breakpoint ) {
-              float: right;
-         } 
-
+        @media screen and( max-width: 768px) {
+                   margin-top: 20px;
+        margin-right: 10px;
+                }
         .ico-bar {
             display: block;
             width: 30px;
@@ -91,19 +100,27 @@ $navbar-breakpoint: 768px;
             &:last-child {
                 margin-bottom: 0;
             }
-             }
-            @media all and (min-width: $navbar-breakpoint) {
-                display: none;
-            }
-       
+        }
+        @media all and (min-width: $navbar-breakpoint) {
+            display: none;
+        }
     }
     &-collapse {
-         &.collapse {
+        @media screen and( min-width: $navbar-breakpoint) {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        &.collapse {
             display: block;
             width: 100%;
-            display:flex;
-            flex-direction:column;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
+            @media screen and( max-width: $navbar-breakpoint) {
+                margin-top: 100px;
+                margin-bottom: 30px;
+            }
             .navbar-nav {
                 display: flex;
                 flex-direction: column;
@@ -121,16 +138,4 @@ $navbar-breakpoint: 768px;
             display: none;
         }
     }
-}
-
-
-
-.navbar-link {
-    color: $third-color;
-    font-family: $global-font-family;
-    font-size: 17px;
-    font-weight: 400;
-    text-decoration: none;
-    padding-bottom: 5px;
-    position: relative;
 }

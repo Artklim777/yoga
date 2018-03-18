@@ -31,7 +31,7 @@
         left: 0;
         z-index: -100;
            @media screen and( max-width: 768px) {
-                display: none;
+               
             }
         &:after {
             content: '';
@@ -45,9 +45,8 @@
             z-index: -10;
         }
      
-    
-	
 	}
+	
 	&-fill-height {
 		min-height: 100vh;
 		
