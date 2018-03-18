@@ -1,5 +1,14 @@
 .card {
   padding-bottom: 201px; }
+  @media screen and (max-width: 970px) {
+    .card {
+      padding-bottom: 100px; } }
+  @media screen and (max-width: 768px) {
+    .card {
+      padding-bottom: 50px; } }
+  @media screen and (max-width: 450px) {
+    .card {
+      padding-bottom: 20px; } }
   .card-body {
     z-index: 50;
     position: relative;
@@ -16,7 +25,8 @@
         -ms-flex-direction: column;
         flex-direction: column;
         padding-top: 75px;
-        padding-bottom: 55px; } }
+        padding-bottom: 55px;
+        margin-bottom: 0; } }
   .card-title {
     padding-bottom: 35px; }
   .card-item {
@@ -38,6 +48,9 @@
         margin-bottom: 30px; } }
     .card-item:last-child {
       margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        .card-item:last-child {
+          margin: 0 auto; } }
     .card-item-heading {
       -ms-flex-order: -1;
       order: -1;
