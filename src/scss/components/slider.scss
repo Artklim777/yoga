@@ -172,7 +172,7 @@
         color: transparent;
         cursor: pointer;
            @media screen and( max-width: 992px) {
-         right: 25px;
+         right: 15px;
     }
         &:before {
             font-size: 20px;
@@ -202,7 +202,7 @@
         color: transparent;
         cursor: pointer;
            @media screen and( max-width: 992px) {
-         right: 25px;
+        left: 15px;
     }
         &:before {
             font-size: 20px;
@@ -238,7 +238,7 @@
 .slider-trener {
     position: relative;
     background-color: #fff;
-    height: 250px;
+    height: 310px;
     color: green;
     box-shadow: 6px 6px 50px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -255,6 +255,10 @@
         right: 40%;
         color: transparent;
         cursor: pointer;
+        @media screen and (max-width: 820px) {
+              top: 75%;
+               right: 15%;
+            }
         &:before {
             font-size: 15px;
             color: $first-color;
@@ -266,6 +270,9 @@
             top: 50%;
             left: 0px;
             transform: translate(100%, -50%);
+            @media screen and (max-width: 820px) {
+               font-size: 30px;
+            }
         }
     }
 
@@ -281,6 +288,14 @@
         left: 30%;
         color: transparent;
         cursor: pointer;
+        @media screen and (max-width: 930px) {
+              left: 25%;
+          }
+            @media screen and (max-width: 820px) {
+              top: 75%;
+               left: 15%;
+            }
+
         &:before {
             font-size: 15px;
             color: $first-color;
@@ -292,6 +307,9 @@
             top: 50%;
             left: 0px;
             transform: translate(100%, -50%) rotate(180deg);
+            @media screen and (max-width: 820px) {
+               font-size: 30px;
+            }
         }
     }
     &-holder {
@@ -303,17 +321,21 @@
         position: relative;
         border-radius: 50%;
         padding: 50px 60px 75px 75px;
-
-
-        &:after {
+        @media screen and (max-width: 820px) {
+                padding: 45px 45px 15px 15px;
+            }
+         &:after {
             content: '';
             position: absolute;
             display: block;
             width: 1px;
             height: 75px;
             background-color: green;
-            bottom: 92px;
+            bottom: 174px;
             right: 0;
+            @media screen and (max-width: 820px) {
+                bottom: 110px;
+            }
         }
     }
     .rounded {
@@ -366,12 +388,33 @@
         color: #777777;
         font-size: 14px;
         font-weight: 400;
-        padding-left: 42px
+        padding-left: 42px;
+        padding-bottom: 62px;
     }
     &-holder2 {
         display: flex;
         position: relative;
-        right: -26%;
+        left: 26%;
+         @media screen and (max-width: 1110px) {
+               left: 20%;
+            
+            }
+            @media screen and (max-width:1050px) {
+               left: 15%;
+            
+            }
+            @media screen and (max-width: 1000px) {
+               left: 10%;
+            
+            }
+            @media screen and (max-width: 930px) {
+               left: 2%;
+            
+            }
+            @media screen and (max-width: 820px) {
+              display: none;
+            
+            }
 
 
 
